@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-background-light dark:bg-background-dark p-6 flex flex-col justify-between border-r border-gray-200 dark:border-gray-800">
+<div>
+<div class="mb-8">
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">DisasterReady</h1>
+<p class="text-sm text-gray-500 dark:text-gray-400">Empowering Safety</p>
+</div>
+<nav class="flex flex-col space-y-2">
+<a class="flex items-center gap-3 px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-primary/20 rounded-lg" href="student_dashboard.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-medium">Home</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-primary/20 rounded-lg" href="module_details _screen.html">
+<span class="material-symbols-outlined">list_alt</span>
+<span class="font-medium">Modules</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-primary/20 rounded-lg" href="virtual_drill_simulation.html">
+<span class="material-symbols-outlined">campaign</span>
+<span class="font-medium">Drills</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 bg-primary text-white rounded-lg" href="emergency_conatcta_and_alerts.html">
+<span class="material-symbols-outlined">call</span>
+<span class="font-medium">Contacts</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-primary/20 rounded-lg" href="adminstrator_dashboard.html">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Admin</span>
+</a>
+</nav>
+</div>
+</aside>
+<main class="flex-1 p-8 overflow-y-auto">
+<header class="mb-8">
+<h2 class="text-3xl font-bold text-gray-900 dark:text-white">Emergency Contacts</h2>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 space-y-8">
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-sm">
+<h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">School Contacts</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-800">
+<span class="text-gray-600 dark:text-gray-400">Principal</span>
+<span class="text-gray-800 dark:text-gray-200 font-medium">+91-9876543210</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-800">
+<span class="text-gray-600 dark:text-gray-400">Emergency Coordinator</span>
+<span class="text-gray-800 dark:text-gray-200 font-medium">+91-8765432109</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="text-gray-600 dark:text-gray-400">School Nurse</span>
+<span class="text-gray-800 dark:text-gray-200 font-medium">+91-7654321098</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-sm">
+<h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Local Authorities</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-800">
+<span class="text-gray-600 dark:text-gray-400">Police Station</span>
+<span class="text-gray-800 dark:text-gray-200 font-medium">+91-100</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-800">
+<span class="text-gray-600 dark:text-gray-400">Fire Department</span>
+<span class="text-gray-800 dark:text-gray-200 font-medium">+91-101</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="text-gray-600 dark:text-gray-400">Ambulance Service</span>
+<span class="text-gray-800 dark:text-gray-200 font-medium">+91-102</span>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl shadow-sm">
+<h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Regional Disaster Management</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-800">
+<span class="text-gray-600 dark:text-gray-400">Disaster Control Room</span>
+<span class="text-gray-800 dark:text-gray-200 font-medium">+91-1070</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-800">
+<span class="text-gray-600 dark:text-gray-400">Helpline</span>
+<span class="text-gray-800 dark:text-gray-200 font-medium">+91-1077</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="text-gray-600 dark:text-gray-400">Emergency Response Team</span>
+<span class="text-gray-800 dark:text-gray-200 font-medium">+91-9988776655</span>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Real-time Alerts</h3>
+<div class="bg-white dark:bg-background-dark p-4 rounded-xl shadow-sm flex items-center gap-4">
+<div class="bg-primary/10 dark:bg-primary/20 text-primary p-3 rounded-lg">
+<span class="material-symbols-outlined text-2xl">flood</span>
+</div>
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">Flood Warning</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Moderate</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark p-4 rounded-xl shadow-sm flex items-center gap-4">
+<div class="bg-primary/10 dark:bg-primary/20 text-primary p-3 rounded-lg">
+<span class="material-symbols-outlined text-2xl">earthquake</span>
+</div>
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">Earthquake Advisory</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Low</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

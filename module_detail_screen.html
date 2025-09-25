@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Disaster Management Education - Quiz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#13a4ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+              success: '#22c55e',
+              danger: '#ef4444',
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-100">
+<div class="flex min-h-screen">
+<aside class="w-80 flex-shrink-0 bg-white dark:bg-zinc-900/50 p-6 flex flex-col justify-between">
+<div>
+<div class="mb-8">
+<h1 class="text-xl font-bold text-zinc-900 dark:text-white">DisasterReady</h1>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Empowering communities</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="student_dashboard.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-medium">Home</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary text-white" href="module_details _screen.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">list_alt</span>
+<span class="font-medium">Modules</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="virtual_drill_simulation.html">
+<span class="material-symbols-outlined">campaign</span>
+<span class="font-medium">Drills</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="emergency_conatcta_and_alerts.html">
+<span class="material-symbols-outlined">group</span>
+<span class="font-medium">Contacts</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="adminstrator_dashboard.html">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Admin</span>
+</a>
+</nav>
+</div>
+</aside>
+<main class="flex-1 p-8 overflow-y-auto">
+<div class="max-w-4xl mx-auto">
+<header class="mb-8 flex justify-between items-center">
+<h1 class="text-4xl font-black text-zinc-900 dark:text-white">Earthquake Preparedness Quiz</h1>
+<div class="text-right">
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Question</p>
+<p class="text-2xl font-bold text-primary">1 <span class="text-zinc-500 dark:text-zinc-400">/ 5</span></p>
+</div>
+</header>
+<div class="mb-8">
+<div class="w-full bg-zinc-200 dark:bg-zinc-700 rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 20%"></div>
+</div>
+</div>
+<section class="bg-white dark:bg-zinc-900/50 p-8 rounded-xl shadow-lg">
+<div class="mb-6">
+<h2 class="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">What is the primary cause of earthquakes?</h2>
+</div>
+<div class="space-y-4 mb-6">
+<button class="w-full text-left p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors flex items-center justify-between">
+<span class="font-medium">A. Volcanic eruptions</span>
+</button>
+<button class="w-full text-left p-4 rounded-lg border border-danger dark:border-danger bg-danger/10 dark:bg-danger/20 transition-colors flex items-center justify-between">
+<span class="font-medium">B. Movement of tectonic plates</span>
+<span class="material-symbols-outlined text-danger">cancel</span>
+</button>
+<button class="w-full text-left p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors flex items-center justify-between">
+<span class="font-medium">C. Major landslides</span>
+</button>
+<button class="w-full text-left p-4 rounded-lg border border-success dark:border-success bg-success/10 dark:bg-success/20 transition-colors flex items-center justify-between">
+<span class="font-medium">D. Atmospheric pressure changes</span>
+<span class="material-symbols-outlined text-success">check_circle</span>
+</button>
+</div>
+<div class="p-4 bg-green-100 dark:bg-green-900/30 rounded-lg mb-6">
+<h3 class="font-bold text-green-800 dark:text-green-300 mb-2">Correct!</h3>
+<p class="text-green-700 dark:text-green-400">The movement and interaction of tectonic plates are the main cause of seismic activity. Your answer was incorrect.</p>
+</div>
+<div class="flex justify-end">
+<button class="bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary/90 transition-colors flex items-center gap-2">
+<span>Next Question</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+</div>
+</main>
+</div>
+
+</body></html>

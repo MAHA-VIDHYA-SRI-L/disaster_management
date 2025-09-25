@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DisasterReady Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-white dark:bg-background-dark/50 flex-shrink-0 border-r border-gray-200 dark:border-gray-800">
+<div class="p-6">
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">DisasterReady</h1>
+<p class="text-sm text-gray-500 dark:text-gray-400">Student Dashboard</p>
+</div>
+<nav class="mt-6 flex-1 px-2 space-y-1">
+<a class="bg-primary/10 text-primary flex items-center px-4 py-2 text-sm font-medium rounded-lg" href="#">
+<span class="material-symbols-outlined mr-3">home</span>
+          Home
+        </a>
+<a class="hover:bg-primary/10 hover:text-primary flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 dark:text-gray-300" href="module_details _screen.html">
+<span class="material-symbols-outlined mr-3" >list_alt</span>
+          Modules
+        </a>
+<a class="hover:bg-primary/10 hover:text-primary flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 dark:text-gray-300" href="virtual_drill_simulation.html">
+<span class="material-symbols-outlined mr-3">notifications</span>
+          Drills
+        </a>
+<a class="hover:bg-primary/10 hover:text-primary flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 dark:text-gray-300" href="emergency_conatcta_and_alerts.html">
+<span class="material-symbols-outlined mr-3">group</span>
+          Contacts
+        </a>
+</nav>
+<a class="hover:bg-primary/10 hover:text-primary flex items-center px-4 py-2 text-sm font-medium rounded-lg text-gray-600 dark:text-gray-300" href="adminstrator_dashboard.html">
+<span class="material-symbols-outlined mr-3">admin_panel_settings</span>
+          Admin
+        </a>
+</aside>
+<main class="flex-1 p-8">
+<header class="mb-8">
+<h1 class="text-4xl font-bold text-gray-900 dark:text-white">Welcome, Anika Sharma</h1>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2">
+<section class="mb-8">
+<h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Learning Progress</h2>
+<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-sm">
+<div class="flex justify-between items-center mb-2">
+<p class="font-medium text-gray-700 dark:text-gray-300">Overall Progress</p>
+<p class="font-semibold text-primary">60%</p>
+</div>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 60%"></div>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Completed 3 out of 5 modules</p>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Upcoming Drills</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-background-dark/50 p-4 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center">
+<div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+<span class="material-symbols-outlined">calendar_month</span>
+</div>
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-100">Earthquake Drill</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">School Grounds</p>
+</div>
+</div>
+<p class="text-sm font-medium text-gray-600 dark:text-gray-300">Oct 25, 2024</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 p-4 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center">
+<div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+<span class="material-symbols-outlined">local_fire_department</span>
+</div>
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-100">Fire Safety Drill</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">College Campus</p>
+</div>
+</div>
+<p class="text-sm font-medium text-gray-600 dark:text-gray-300">Nov 15, 2024</p>
+</div>
+</div>
+</section>
+</div>
+<div>
+<section>
+<h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Quick Emergency Resources</h2>
+<div class="space-y-4">
+<a class="bg-white dark:bg-background-dark/50 p-4 rounded-xl shadow-sm flex items-center hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors" href="#">
+<div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+<span class="material-symbols-outlined">call</span>
+</div>
+<p class="font-semibold text-gray-800 dark:text-gray-100">Emergency Contacts</p>
+</a>
+<a class="bg-white dark:bg-background-dark/50 p-4 rounded-xl shadow-sm flex items-center hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors" href="#">
+<div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+<span class="material-symbols-outlined">map</span>
+</div>
+<p class="font-semibold text-gray-800 dark:text-gray-100">Evacuation Routes</p>
+</a>
+<a class="bg-white dark:bg-background-dark/50 p-4 rounded-xl shadow-sm flex items-center hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors" href="#">
+<div class="bg-primary/10 text-primary p-3 rounded-lg mr-4">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<p class="font-semibold text-gray-800 dark:text-gray-100">First Aid Guide</p>
+</a>
+</div>
+</section>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

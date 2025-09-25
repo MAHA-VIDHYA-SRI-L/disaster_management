@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DisasterReady</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                        "foreground-light": "#111827",
+                        "foreground-dark": "#f9fafb",
+                        "subtle-light": "#6b7280",
+                        "subtle-dark": "#9ca3af",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-white dark:bg-background-dark border-r border-gray-200 dark:border-gray-800 flex flex-col">
+<div class="p-6">
+<h1 class="text-xl font-bold text-foreground-light dark:text-foreground-dark">DisasterReady</h1>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Empowering Safety</p>
+</div>
+<nav class="flex-grow px-4">
+<ul class="space-y-2">
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-subtle-light dark:text-subtle-dark hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary" href="student_dashboard.html">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+<span>Home</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-subtle-light dark:text-subtle-dark hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary" href="module_details _screen.html">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M80,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H88A8,8,0,0,1,80,64Zm136,56H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,64H88a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM44,52A12,12,0,1,0,56,64,12,12,0,0,0,44,52Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,116Zm0,64a12,12,0,1,0,12,12A12,12,0,0,0,44,180Z"></path></svg>
+<span>Modules</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary font-medium" href="virtual_drill_simulation.html">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M120,16V8a8,8,0,0,1,16,0v8a8,8,0,0,1-16,0Zm80,32a8,8,0,0,0,5.66-2.34l8-8a8,8,0,0,0-11.32-11.32l-8,8A8,8,0,0,0,200,48ZM50.34,45.66A8,8,0,0,0,61.66,34.34l-8-8A8,8,0,0,0,42.34,37.66ZM232,176v24a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V176a16,16,0,0,1,16-16V128a88,88,0,0,1,88.67-88c48.15.36,87.33,40.29,87.33,89v31A16,16,0,0,1,232,176ZM134.68,87.89C153.67,91.08,168,108.32,168,128a8,8,0,0,0,16,0c0-27.4-20.07-51.43-46.68-55.89a8,8,0,1,0-2.64,15.78ZM216,200V176H40v24H216Z"></path></svg>
+<span>Drills</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-subtle-light dark:text-subtle-dark hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary" href="emergency_conatcta_and_alerts.html">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path></svg>
+<span>Contacts</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-subtle-light dark:text-subtle-dark hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary" href="adminstrator_dashboard.html">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path></svg>
+<span>Admin</span>
+</a>
+</li>
+</ul>
+</nav>
+</aside>
+<main class="flex-1 p-8">
+<header>
+<h2 class="text-3xl font-bold text-foreground-light dark:text-foreground-dark">Simulated Disaster Drills</h2>
+<p class="mt-2 text-subtle-light dark:text-subtle-dark">Participate in simulated disaster scenarios to test your knowledge and skills. Receive immediate feedback and guidance on safety protocols.</p>
+</header>
+<div class="mt-8 space-y-8">
+<div class="bg-white dark:bg-background-dark/50 rounded-xl overflow-hidden shadow-sm @container">
+<div class="flex flex-col @lg:flex-row">
+<div class="w-full @lg:w-1/3 aspect-video bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARMIFVe88bCsgqoapqJUBXckEoKJUhZGO9F2HRo3BjKSQZUlM2-GmYYPaiG5P8pMp4Ej32ZM09RuyixsgR3LuJUGcOJ8IMepPVMkza_uCi9PQLI5DKfNS1iZunKmky6p-T7NxP3JRfrWk1BfZxSG3KjQAX1Wq4Nm80Y8L_VkZx23C-_uAvAiAn2k2T6aDnWbcU5pd9ld7uAa8NMbgynNm-wnMsMfz3pNpiNqvungCbgGwZZ44GeYc4jDqanLuQSyOU11czTfASZTA5");'></div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-foreground-light dark:text-foreground-dark">Earthquake Drill</h3>
+<p class="mt-2 text-subtle-light dark:text-subtle-dark">Practice earthquake safety procedures in a virtual environment.</p>
+</div>
+<div class="mt-4 flex justify-end">
+<button ><a href="module_detail_screen.html" class="bg-primary text-white font-medium py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors">Start Drill</a></button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-xl overflow-hidden shadow-sm @container">
+<div class="flex flex-col @lg:flex-row">
+<div class="w-full @lg:w-1/3 aspect-video bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtm4-LvM_OLdwqSewmQzvhONDRMBKpkzoz6EruFkloqnXTuEBsfLLgQgtQWQ2o5oKGJx2iEx1-0JeMkSKjIwd48j4d8itOvSklqR6LycMcuSMZsmveIeLvQJJAIMAXG6R1VmfI-_8VxcAlTh4_KHP8zf9mK6ekkkG6QvIFesBz13E4TqDHkJUxOEqF8WP3vFt-_yr-Lxh00ZxOw5x4uEn4eKVMvQ_KreKQE5VqECeui4sQmQipNhb43iit_bdQn-0Cv2vnKYaH85VU");'></div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-foreground-light dark:text-foreground-dark">Flood Drill</h3>
+<p class="mt-2 text-subtle-light dark:text-subtle-dark">Learn how to respond to flood situations and ensure your safety.</p>
+</div>
+<div class="mt-4 flex justify-end">
+<button class="bg-primary text-white font-medium py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors">Start Drill</button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-xl overflow-hidden shadow-sm @container">
+<div class="flex flex-col @lg:flex-row">
+<div class="w-full @lg:w-1/3 aspect-video bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAqZopz1EFOGV5ZNfmb83XEmDQJqwtKMgAfVkwpIg-3REj58ZSp_9kIav1G3pMQTzO_HEqH30IULrl641UlZY6uH3ABSba-o_8YgPqIGHViaT3crpn_CefYIhGvoVtMxpx6GS-PieqvRSy0_kvW_FO-6mxTEAwfvbTmqHHrtnkOEFivXsNuKkw12FcvGDjMCQW0Fx4TdS8m4_YfUbrUvtw4y3m0AgNQ3AaLHVMeOWpvlvdF9KGMXMqmHByEzzK_BO-jN4b_vI3_lg_");'></div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold text-foreground-light dark:text-foreground-dark">Fire Drill</h3>
+<p class="mt-2 text-subtle-light dark:text-subtle-dark">Understand fire safety measures and evacuation procedures.</p>
+</div>
+<div class="mt-4 flex justify-end">
+<button class="bg-primary text-white font-medium py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors">Start Drill</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

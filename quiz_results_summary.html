@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                        "foreground-light": "#111618",
+                        "foreground-dark": "#f0f3f4",
+                        "card-light": "#ffffff",
+                        "card-dark": "#18262e",
+                        "subtle-light": "#617c89",
+                        "subtle-dark": "#a0b0b8",
+                        "success-light": "#16a34a",
+                        "success-dark": "#22c55e",
+                        "danger-light": "#dc2626",
+                        "danger-dark": "#ef4444"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark">
+<div class="flex min-h-screen">
+<aside class="w-80 flex-shrink-0 bg-card-light dark:bg-card-dark p-6 flex flex-col justify-between">
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-3">
+<img alt="Priya Sharma" class="size-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIPN-R35gINcOaZ3yJyxN9kn-bOJl-7wrMhlWcpI53W2E_8ulNX99TJy2lETDX_apeQZ5kHkVkBzUwtvIdgjpQrk0LyYHHIAGblHWDCfo_qDcW41i85GIF4HL626vkyqmgFFhBtC38yptlyFAaNMAsvMe4gI98mwjEMx9OGztFoMoXlS-O68tWP1IXizlMs9hvZQOqcg6OcmPU-xwUh_JbikimjbJl4RoKD8ckoGUzvytfpxjLv-rCd6KKm084hz7sZmjoUaoQuSnK"/>
+<h1 class="text-base font-medium">Priya Sharma</h1>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-subtle-light dark:text-subtle-dark hover:bg-primary/10 hover:text-primary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-subtle-light dark:text-subtle-dark hover:bg-primary/10 hover:text-primary" href="#">
+<span class="material-symbols-outlined">book</span>
+<span class="text-sm font-medium">Modules</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg bg-primary/10 text-primary" href="#">
+<span class="material-symbols-outlined">quiz</span>
+<span class="text-sm font-medium">Quizzes</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-subtle-light dark:text-subtle-dark hover:bg-primary/10 hover:text-primary" href="#">
+<span class="material-symbols-outlined">monitoring</span>
+<span class="text-sm font-medium">Progress</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg text-subtle-light dark:text-subtle-dark hover:bg-primary/10 hover:text-primary" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="text-sm font-medium">Resources</span>
+</a>
+</nav>
+</div>
+<button class="flex items-center gap-3 px-4 py-2 rounded-lg text-subtle-light dark:text-subtle-dark hover:bg-primary/10 hover:text-primary">
+<span class="material-symbols-outlined">logout</span>
+<span class="text-sm font-medium">Logout</span>
+</button>
+</aside>
+<main class="flex-1 p-8">
+<div class="max-w-4xl mx-auto">
+<header class="mb-8">
+<h1 class="text-3xl font-bold">Quiz Results: Disaster Preparedness</h1>
+</header>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg mb-8">
+<p class="text-base font-medium text-subtle-light dark:text-subtle-dark mb-1">Your Score</p>
+<p class="text-4xl font-bold text-primary">8/10</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark mt-1">Great job! You have a good understanding of disaster preparedness.</p>
+</div>
+<h2 class="text-2xl font-bold mb-6">Review Your Answers</h2>
+<div class="space-y-6">
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<p class="font-medium mb-1">What is the first step in disaster preparedness?</p>
+<p class="text-sm text-success-light dark:text-success-dark font-medium">Correct</p>
+</div>
+<div class="flex-shrink-0 size-7 flex items-center justify-center rounded-full bg-success-light/10 text-success-light dark:bg-success-dark/20 dark:text-success-dark">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg border border-danger-light/50 dark:border-danger-dark/50">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<p class="font-medium mb-1">Which of the following is NOT a common natural disaster in India?</p>
+<p class="text-sm text-danger-light dark:text-danger-dark font-medium">Incorrect</p>
+</div>
+<div class="flex-shrink-0 size-7 flex items-center justify-center rounded-full bg-danger-light/10 text-danger-light dark:bg-danger-dark/20 dark:text-danger-dark">
+<span class="material-symbols-outlined text-base">close</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-subtle-light/20 dark:border-subtle-dark/20">
+<p class="text-sm text-subtle-light dark:text-subtle-dark"><span class="font-semibold">Explanation:</span> While earthquakes, floods, and cyclones are common in India, blizzards are not typically experienced due to the climate.</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<p class="font-medium mb-1">What should you do during an earthquake?</p>
+<p class="text-sm text-success-light dark:text-success-dark font-medium">Correct</p>
+</div>
+<div class="flex-shrink-0 size-7 flex items-center justify-center rounded-full bg-success-light/10 text-success-light dark:bg-success-dark/20 dark:text-success-dark">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<p class="font-medium mb-1">Which of the following is a sign of a potential flood?</p>
+<p class="text-sm text-success-light dark:text-success-dark font-medium">Correct</p>
+</div>
+<div class="flex-shrink-0 size-7 flex items-center justify-center rounded-full bg-success-light/10 text-success-light dark:bg-success-dark/20 dark:text-success-dark">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg border border-danger-light/50 dark:border-danger-dark/50">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<p class="font-medium mb-1">What is the primary goal of disaster relief efforts?</p>
+<p class="text-sm text-danger-light dark:text-danger-dark font-medium">Incorrect</p>
+</div>
+<div class="flex-shrink-0 size-7 flex items-center justify-center rounded-full bg-danger-light/10 text-danger-light dark:bg-danger-dark/20 dark:text-danger-dark">
+<span class="material-symbols-outlined text-base">close</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-subtle-light/20 dark:border-subtle-dark/20">
+<p class="text-sm text-subtle-light dark:text-subtle-dark"><span class="font-semibold">Explanation:</span> The primary goal of disaster relief efforts is to save lives and provide immediate assistance to affected communities, not to rebuild infrastructure.</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg">
+<div class="flex items-start gap-4">
+<div class="flex-1">
+<p class="font-medium mb-1">What is the importance of community involvement in disaster management?</p>
+<p class="text-sm text-success-light dark:text-success-dark font-medium">Correct</p>
+</div>
+<div class="flex-shrink-0 size-7 flex items-center justify-center rounded-full bg-success-light/10 text-success-light dark:bg-success-dark/20 dark:text-success-dark">
+<span class="material-symbols-outlined text-base">check</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-sm font-bold">Review Module</span>
+</button>
+<button class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-white hover:bg-opacity-90 transition-opacity">
+<span class="material-symbols-outlined">refresh</span>
+<span class="text-sm font-bold">Retake Quiz</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

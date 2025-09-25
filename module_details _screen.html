@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Disaster Management Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#13a4ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-100">
+<div class="flex min-h-screen">
+<aside class="w-80 flex-shrink-0 bg-white dark:bg-zinc-900/50 p-6 flex flex-col justify-between">
+<div>
+<div class="mb-8">
+<h1 class="text-xl font-bold text-zinc-900 dark:text-white">DisasterReady</h1>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Empowering communities</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="student_dashboard.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-medium">Home</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary text-white" href="module_details _screen.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">list_alt</span>
+<span class="font-medium">Modules</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="virtual_drill_simulation.html">
+<span class="material-symbols-outlined">campaign</span>
+<span class="font-medium">Drills</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="emergency_conatcta_and_alerts.html">
+<span class="material-symbols-outlined">group</span>
+<span class="font-medium">Contacts</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="adminstrator_dashboard.html">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Admin</span>
+</a>
+</nav>
+</div>
+</aside>
+<main class="flex-1 p-8 overflow-y-auto">
+<div class="max-w-4xl mx-auto">
+<header class="mb-8">
+<h1 class="text-4xl font-black text-zinc-900 dark:text-white">Module 1: Earthquake Preparedness</h1>
+</header>
+<div class="mb-8">
+<div class="flex justify-between items-center mb-2">
+<h2 class="text-lg font-bold text-zinc-900 dark:text-white">Module Progress</h2>
+<span class="font-bold text-primary">60%</span>
+</div>
+<div class="w-full bg-zinc-200 dark:bg-zinc-700 rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 60%"></div>
+</div>
+</div>
+<section class="mb-8">
+<h2 class="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Introduction</h2>
+<p class="text-zinc-600 dark:text-zinc-300 leading-relaxed">
+              Earthquakes are a significant natural hazard in many parts of India. This module will introduce you to the basics of earthquakes, their causes, and potential impacts. We'll also cover essential safety measures to take before, during, and after an earthquake.
+            </p>
+</section>
+<section class="mb-8">
+<h2 class="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Key Concepts</h2>
+<div class="space-y-4">
+<div class="flex items-center p-4 bg-white dark:bg-zinc-900/50 rounded-lg">
+<div class="p-3 bg-primary/10 dark:bg-primary/20 rounded-lg mr-4">
+<span class="material-symbols-outlined text-primary">auto_stories</span>
+</div>
+<div>
+<h3 class="font-bold text-zinc-900 dark:text-white">What is an Earthquake?</h3>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Understanding the science behind earthquakes</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-white dark:bg-zinc-900/50 rounded-lg">
+<div class="p-3 bg-primary/10 dark:bg-primary/20 rounded-lg mr-4">
+<span class="material-symbols-outlined text-primary">map</span>
+</div>
+<div>
+<h3 class="font-bold text-zinc-900 dark:text-white">Seismic Zones in India</h3>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Identifying areas prone to earthquakes</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-white dark:bg-zinc-900/50 rounded-lg">
+<div class="p-3 bg-primary/10 dark:bg-primary/20 rounded-lg mr-4">
+<span class="material-symbols-outlined text-primary">apartment</span>
+</div>
+<div>
+<h3 class="font-bold text-zinc-900 dark:text-white">Earthquake-Resistant Construction</h3>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Building codes and structural safety</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h2 class="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Interactive Quiz</h2>
+<p class="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4">
+              Test your knowledge with our interactive quiz. Earn points and badges for correct answers!
+            </p>
+<button class="bg-primary text-white font-bold py-2 px-6 rounded-lg hover:bg-primary/90 transition-colors">
+              Start Quiz
+            </button>
+</section>
+<section class="mb-8">
+<h2 class="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Gamified Elements</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-white dark:bg-zinc-900/50 p-6 rounded-lg">
+<p class="text-zinc-500 dark:text-zinc-400 font-medium mb-1">Points Earned</p>
+<p class="text-3xl font-bold text-primary">150</p>
+</div>
+<div class="bg-white dark:bg-zinc-900/50 p-6 rounded-lg">
+<p class="text-zinc-500 dark:text-zinc-400 font-medium mb-1">Badges</p>
+<p class="text-3xl font-bold text-primary">3</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Next Steps</h2>
+<p class="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4">
+              Proceed to the next module to learn about specific earthquake safety drills and emergency procedures.
+            </p>
+<button class="bg-primary/20 dark:bg-primary/30 text-primary font-bold py-2 px-6 rounded-lg hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">
+              Continue to Module 2
+            </button>
+</section>
+</div>
+</main>
+</div>
+
+</body></html>
